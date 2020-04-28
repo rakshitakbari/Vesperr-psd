@@ -1,0 +1,90 @@
+#about{
+    padding: 60px 0;
+    overflow: hidden;
+    .content{
+        .about-details{
+            p{
+                font-size: 16px;
+                color: #444444;
+                line-height: 1.5;
+                font-weight: 400;
+                text-align: left;
+                font-family: $font-family;
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    padding-left: 28px;
+                    position: relative;
+                    font-size: 16px;
+                    color: #444444;
+                    line-height: 2;
+                    font-weight: 400;
+                    text-align: left;
+                    font-family: $font-family;
+                    i{
+                        position: absolute;
+                        left: 0;
+                        top: 2px;
+                        font-size: 16px;
+                        color: $theme-color;
+                        line-height: 2;
+                    }
+                }
+            }
+        }    
+    }
+}   
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translatey(70px);
+        -ms-transform: translatey(70px);
+        transform: translatey(70px);
+    }
+    30%{
+        opacity: 0;
+        -webkit-transform: translatey(70px);
+        -ms-transform: translatey(70px);
+        transform: translatey(70px);
+        transition-delay: .4s;
+    }
+}
+
+.fadeInup {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.animetion-details {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: translateZ(0) scale(0.1);
+    }
+    30%{
+        opacity: 0;
+        transform: translateZ(0) scale(0.1);
+    }
+}
+.animetion-title {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInScale {
+    -webkit-animation-name: fadeInScale;
+    animation-name: fadeInScale;
+}

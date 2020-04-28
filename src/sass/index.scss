@@ -1,0 +1,81 @@
+#lms-page-index {
+    width: 100%;
+    height: 70vh;
+    margin-top: 70px;
+    padding: 60px 0;
+    overflow: hidden;
+    .hero-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .hd-title{
+            h1{
+                margin: 0 0 10px 0;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 56px;
+                color: $black;
+            }
+            h2{
+                color: #484848;
+                margin-bottom: 50px;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.2;
+            }
+        }
+    }
+    .hero-img{
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translatey(50px);
+        -ms-transform: translatey(50px);
+        transform: translatey(50px);
+    }
+    30%{
+        opacity: 0;
+        -webkit-transform: translatey(20px);
+        -ms-transform: translatey(20px);
+        transform: translatey(20px);
+        transition-delay: .4s;
+    }
+}
+
+.fadeInup {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        -webkit-transform: translatey(10px);
+        -ms-transform: translatey(10px);
+        transform: translatey(10px);
+    }
+    30%{
+        opacity: 0;
+         -webkit-transform: translatey(10px);
+        -ms-transform: translatey(10px);
+        transform: translatey(10px);
+    }
+}
+.animatedScale {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInScale {
+    -webkit-animation-name: fadeInScale;
+    animation-name: fadeInScale;
+}

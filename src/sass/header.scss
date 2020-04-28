@@ -1,0 +1,95 @@
+#vp-menu{
+    height: 80px;
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 997;
+        transition: all 0.5s;
+    }
+    .navbar-brand{
+        font-size: 32px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #222222;
+        text-decoration: none;
+    }
+    #navbarsExample04{
+        ul{
+            li{
+                position: relative;
+                a{
+                        display: block;
+                        position: relative;
+                        color: #555555;
+                        padding: 8px 0 12px 25px;
+                        transition: 0.3s;
+                        font-size: 14px;
+                        font-family: $font-family;
+                        font-weight: 600;
+                        transition: ease all 0.3s;
+                        &:hover{
+                            color: $theme-color;
+                            transition: ease all 0.3s;
+                        }
+                        &:active{
+                            color: $white !important;
+                        }
+                }
+                .active{
+                    color: $theme-color;
+                    text-decoration: none;
+                }
+            }
+            .dropdown{
+                &:hover{
+                    > ul{
+                        opacity: 1;
+                        top: 100%;
+                        visibility: visible;
+                    }
+                }
+                ul{
+                    display: block;
+                    position: absolute;
+                    left: 25px;
+                    top: calc(100% + 30px);
+                    z-index: 99;
+                    opacity: 0;
+                    visibility: hidden;
+                    padding: 10px 0;
+                    background: $white;
+                    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+                    transition: ease all 0.3s;
+                    border-radius: 5px;
+                    border: none;
+                    li{
+                        min-width: 180px;
+                        position: relative;
+                    }
+                    a{
+                        padding: 10px 20px;
+                        font-size: 14px;
+                        text-transform: none;
+                        color: #222222;
+                        font-family: $font-family;
+                        transition: ease all 0.3s;
+                        &:hover{
+                            color: $theme-color;
+                            transition: ease all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fixed-header{
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        height: 60px;
+        background: $white;
+  }
+}

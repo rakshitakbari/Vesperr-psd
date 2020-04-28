@@ -1,0 +1,68 @@
+#features{
+    .icon-box {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background: #f6f6f6;
+        transition: ease-in-out 0.3s;
+        &:hover{
+            background: #eef7fc;
+        }
+        i {
+            font-size: 26px;
+            padding-right: 10px;
+            line-height: 1; 
+        }
+        .fa-store{
+            color: #ffbb2c;
+        }
+        .fa-box{
+            color: #5578ff;
+        }
+        .fa-calendar-alt{
+            color: #e80368;
+        }
+        .fa-link{
+            color: #e361ff;
+        }
+        .fa-database{
+            color: #47aeff;
+        }
+        .fa-address-book{
+            color: #ffa76e;
+        }
+        .fa-folder-open{
+            color: #11dbcf;
+        }
+        .fa-tags{
+            color: #4233ff;
+        }   
+        .fa-anchor{
+            color: #b2904f;
+        }
+        .fa-discourse{
+            color: #b20969;
+        }
+        .fa-bell{
+            color: #ff5828;
+        }
+        .fa-binoculars{
+            color: #29cc61;
+        }
+        h3 {
+            font-weight: 700;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            font-size: 16px;
+            a {
+                color: #222222;
+                transition: ease-in-out 0.3s;
+                &:hover{
+                    text-decoration: none;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

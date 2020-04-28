@@ -1,0 +1,154 @@
+#services{
+    padding: 60px 0;
+    overflow: hidden;
+    p{
+        margin: 15px 0 0 0;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #444444;
+        font-family: $font-family;
+    }
+    .icon-box{
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        background: $white;
+        box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+        z-index: 1;
+        &::before{
+            content: '';
+            position: absolute;
+            background: #e1f0fa;
+            right: -60px;
+            top: -40px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            transition: all 0.3s;
+            z-index: -1;
+        }
+        &:hover{
+            &:before {
+                background: $theme-color;
+                right: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 0px;
+            }
+            .icon{
+                background: $white;
+                i{
+                    color: $theme-color;
+                }
+            }
+            .title{
+                color: $white;
+            }
+            .description{
+                color: $white;
+            }
+        }
+        .icon {
+            margin: 0 auto 20px auto;
+            padding-top: 16px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            background: $theme-color;
+            transition: all 0.3s ease-in-out;
+            i{
+                font-size: 28px;
+                line-height: 1;
+                color: $white;
+            }
+        }
+        .title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .description {
+            font-size: 15px;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+#more-services{
+    padding: 60px 0;
+    overflow: hidden;
+    .card{
+        background-image: url(../images/more-services-1.jpg);
+    }    
+    .card-img-2{
+        background-image: url(../images/more-services-2.jpg);
+    }
+    .card-img-3{
+        background-image: url(../images/more-services-3.jpg);
+    }
+    .card-img-4{
+        background-image: url(../images/more-services-4.jpg);
+    }
+    .card{
+        border: 0;
+        padding: 160px 20px 20px 20px;
+        position: relative;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &:hover{
+            .card-body {
+                background: $theme-color;
+                .card-title{
+                    a{
+                        color: $white;
+                    }
+                }
+                .card-text {
+                    color: $white;
+                }
+                .read-more a{
+                    color: $white;
+                }
+            }
+        }
+        .card-body{
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px 30px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+            transition: ease-in-out 0.4s;
+            border-radius: 5px;
+            .card-title {
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 15px;
+                a{
+                    color: #222222;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+            .card-text {
+                color: #5e5e5e;
+            }
+            .read-more a {
+                color: #777777;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 12px;
+                transition: 0.4s;
+            }
+        }
+    }
+}
