@@ -1,27 +1,79 @@
-.map{
-    width: 100%;
-
+#contact{
+  padding: 60px 0;
+  overflow: hidden;
+  @include media-breakpoint-down(md) {
+      padding: 30px 0;
+  }
+  .contact-about{
+      h3 {
+        font-size: 28px;
+        margin: 0 0 10px 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #222222;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        color: #888;
+      }
+      .social-links {
+        padding-bottom: 20px;
+        a {
+            font-size: 18px;
+            display: inline-block;
+            background: $white;
+            color: $theme-color;
+            line-height: 1;
+            padding: 8px 0;
+            margin-right: 4px;
+            border-radius: 50%;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            transition: 0.3s;
+            border: 1px solid $theme-color;
+            &:hover{
+              background: $theme-color;
+              color: $white;
+            }
+        }
+      }
+  }
+  .info{
+    color: #444444;
+    i {
+        font-size: 24px;
+        color: $theme-color;
+        float: left;
+        line-height: 1;
+        &.fa-phone{
+          transform: rotate(90deg);
+        }
+    }
+    p {
+        padding: 0 0 10px 42px;
+        line-height: 28px;
+        font-size: 14px;
+        margin-bottom: 1rem;
+    }
+  }
+  .php-email-form{
+    input, textarea{
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+    }
+    button[type="submit"] {
+        background: $theme-color;
+        border: 0;
+        padding: 10px 24px;
+        color: $white;
+        transition: 0.4s;
+        border-radius: 50px;
+        font-weight: 600;
+    }
+  }
 }
-
-.contact-form{
-    width: 100%;
-}
-
-form label {
-  display: inline-block;
-  width: 100px;
-}
-
-form div {
-  margin-bottom: 10px;
-}
-
-.error {
-  color: red;
-  margin-left: 5px;
-}
-
-label.error {
-  display: inline;
-}
-

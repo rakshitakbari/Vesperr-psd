@@ -1,5 +1,10 @@
 #vp-menu{
     height: 80px;
+    @media (min-width: 991px){
+        .navbar-expand-md .navbar-toggler {
+            display: none;
+        }
+    }   
     .navbar{
         position: fixed;
         top: 0;

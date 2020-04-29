@@ -1,0 +1,18 @@
+#footer{
+    padding: 60px 0 30px;
+    overflow: hidden;
+    background: $white;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    color: #222222;
+    font-size: 14px;
+    @include media-breakpoint-down(md) {
+        padding: 30px 0;
+    }
+    .copyright{
+        font-family: $font-family;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #222222;
+    }
+}

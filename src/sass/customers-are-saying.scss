@@ -1,0 +1,91 @@
+#customers-are-saying{
+    padding: 60px 0;
+    overflow: hidden;
+    @include media-breakpoint-down(md) {
+        padding: 30px 0;
+    }
+    // .section-title{
+    //     h2{
+    //         @include media-breakpoint-down(md) {
+    //             font-size: 28px;
+    //         }  
+    //         @include media-breakpoint-down(sm) {
+    //             font-size: 24px;
+    //         }
+    //         @include media-breakpoint-down(xs) {
+    //             font-size: 20px;
+    //         }
+    //     }
+    // }
+    // @include media-breakpoint-down(md) {
+    //     padding: 30px 0;
+    // }
+    .axit-author-part{
+        justify-content: space-around;
+        margin-top: 50px;
+        @include media-breakpoint-down(md) {
+            margin-top: 20px;
+        }
+        .axit-customers-saying-block{
+            max-width: 290px;
+            @include media-breakpoint-down(md){
+                padding-bottom: 20px;
+            }
+            @include media-breakpoint-down(sm){
+                max-width: 100%;
+            }
+            .axit-customers-saying-content{
+                border-radius: 4px;
+                box-sizing: content-box;
+                padding: 20px;
+                box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+                position: relative;
+                background: $white;
+                p{
+                    font-size: 16px;
+                    color: #444444;
+                    font-family: $font-family;
+                    font-style: italic;
+                }
+                &:after{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 16px solid #e1f0fa;
+                    position: absolute;
+                    bottom: -16px;
+                    left: 23px;
+                    right: 0;
+                }
+            }
+            .axit-author{
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                img{
+                    width: 90px;
+                    border-radius: 40px;
+                    border: 6px solid $white;
+                }
+                .axit-author-name{
+                    margin-left: 14px;
+                    h3{
+                    font-size: 20px;
+                    color: #333333;
+                    font-weight: bold;
+                    font-family: $font-family;
+                }
+                    span{
+                        color: #86878b;
+                        font-size: 14px;
+                        font-family: $font-family;
+                        font-weight: normal;
+
+                    }
+                }
+            }
+        }
+    }
+}

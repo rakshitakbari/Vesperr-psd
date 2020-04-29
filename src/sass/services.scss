@@ -1,6 +1,9 @@
 #services{
     padding: 60px 0;
     overflow: hidden;
+    @include media-breakpoint-down(md) {
+        padding: 30px 0;
+    }
     p{
         margin: 15px 0 0 0;
         font-size: 1rem;
@@ -84,6 +87,9 @@
 #more-services{
     padding: 60px 0;
     overflow: hidden;
+    @include media-breakpoint-down(md) {
+        padding: 30px 0;
+    }
     .card{
         background-image: url(../images/more-services-1.jpg);
     }    
